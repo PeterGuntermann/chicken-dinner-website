@@ -1,9 +1,8 @@
 {
-  "name": "static-website-template",
-  "version": "1.0.2",
-  "description": "A template for building static website",
-  "author": "Vincent Will <vincent.will@vaitrade.de>",
-  "license": "MIT",
+  "name": "chicken-dinner-website",
+  "version": "1.0.0",
+  "description": "Website of the band Chicken Dinner",
+  "author": "Peter Guntermann",
   "repository": {
     "type": "git",
     "url": "https://github.com/Vincenius/static-website-template"
@@ -23,27 +22,27 @@
     "watch:html": "onchange \"src/views\" -- npm run build:html",
     "watch:images": "onchange \"src/images\" -- npm run build:images",
     "watch:js": "onchange \"src/js\" -- webpack --mode=development",
-    "watch": "run-p serve watch:*"
+    "watch": "run-p serve watch:*"  
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "autoprefixer": "^10.4.4",
-    "babel-loader": "^8.2.3",
-    "browser-sync": "^2.27.9",
-    "eslint": "^8.11.0",
+    "@babel/preset-env": "^7.23.9",
+    "autoprefixer": "^10.4.17",
+    "babel-loader": "^9.1.3",
+    "browser-sync": "^3.0.2",
+    "eslint": "^8.57.0",
     "eslint-webpack-plugin": "^3.1.1",
-    "htmlnano": "^2.0.0",
+    "htmlnano": "^2.1.0",
     "imagemin-cli": "^7.0.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "postcss-cli": "^9.1.0",
-    "postcss-scss": "^4.0.3",
+    "postcss-cli": "^11.0.0",
+    "postcss-scss": "^4.0.9",
     "posthtml": "^0.16.6",
     "posthtml-cli": "^0.10.0",
-    "posthtml-modules": "^0.8.0",
-    "stylelint": "^14.6.0",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "posthtml-modules": "^0.9.1",
+    "stylelint": "^16.2.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
