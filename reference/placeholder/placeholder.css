@@ -1,0 +1,29 @@
+body {
+  font-family: 'Noto Sans TC', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 2rem;
+  color: #eeeeee;
+  text-shadow: 3px 3px 3px #222222;
+}
+h1 {
+  font-size: 6rem;
+}
+p {
+  font-size: 2rem;
+}

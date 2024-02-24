@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/NotoSansTC-Medium.otf") format("opentype"); }
+:root {
+  --color1: hsl(30deg 3% 12%);
+  --color-yellow: #f5d402;
+  --color-orange: #f59402; }
+
+.color-yellow {
+  color: var(--color-yellow); }
+
+a {
+  border-bottom: 0; }
+
+#sidebar {
+  padding: 0.5em 2.5em; }
+  @media screen and (max-width: 1280px) {
+    #sidebar {
+      padding: 0; } }
+  #sidebar .inner {
+    justify-content: space-between; }
+    @media screen and (max-width: 1280px) {
+      #sidebar .inner {
+        justify-content: center; } }
+  #sidebar nav a:before {
+    background: #975b02; }
+  #sidebar nav a:after,
+  #sidebar nav a.active:after {
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow)); }
+  #sidebar nav > ul > li {
+    margin-top: 1rem; }
+    @media screen and (max-width: 1280px) {
+      #sidebar nav > ul > li {
+        margin-top: 0; } }
+  #sidebar .sidebar-logo,
+  #sidebar .sidebar-warnschild {
+    max-width: 200px; }
+    #sidebar .sidebar-logo img,
+    #sidebar .sidebar-warnschild img {
+      width: 100%; }
+    @media screen and (max-width: 1280px) {
+      #sidebar .sidebar-logo,
+      #sidebar .sidebar-warnschild {
+        display: none; } }
+
+body,
+#sidebar {
+  background-color: var(--color1);
+  font-family: 'NotoSans', Arial, sans-serif; }
+
+body,
+input,
+select,
+textarea {
+  font-family: 'NotoSans', Arial, sans-serif; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 1.5em; }
+
+#intro {
+  background: none; }
+  #intro .inner {
+    padding: 0; }
+    #intro .inner picture {
+      max-width: 1280px; }
+
+#beschreibung .inner {
+  text-align: center; }
+#beschreibung #der-mix-machts ul {
+  list-style-type: none;
+  padding-left: 2rem;
+  font-size: 1rem; }
+#beschreibung #repertoire {
+  column-count: 2;
+  font-size: 0.875rem; }
+  #beschreibung #repertoire > p {
+    margin-bottom: 0.75rem; }
+
+#wir .inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; }
+  @media screen and (max-width: 736px) {
+    #wir .inner {
+      grid-template-columns: repeat(2, 1fr); } }
+  #wir .inner img {
+    width: 100%; }
+
+#huehnchenslider .inner {
+  padding: 0; }
+
+body.impressum, body.datenschutz {
+  padding: 2rem; }
+
+.center-logo {
+  display: none; }
+  @media screen and (max-width: 1280px) {
+    .center-logo {
+      display: block; } }
+  .center-logo .image_container {
+    text-align: center; }
+  .center-logo img {
+    width: 250px;
+    height: auto; }
+
+.slider .slick-dots {
+  position: relative;
+  bottom: 0; }
+  .slider .slick-dots button {
+    background: transparent;
+    border-radius: 50%; }
+    .slider .slick-dots button:before {
+      content: ""; }
+  .slider .slick-dots .slick-active button {
+    background: var(--color-yellow);
+    opacity: 0.5; }
+
+#gallery-segelfest2022 {
+  --auto-grid-min-size: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem; }
+  #gallery-segelfest2022 img {
+    width: 100%; }
+
+.lightbox .lb-outerContainer {
+  background: var(--color1); }
+.lightbox .lb-image {
+  border: 2px solid transparent; }
+
+.action-button {
+  display: block;
+  background-image: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: var(--color-yellow);
+  border-color: var(--color-orange);
+  border-width: 1px;
+  border-style: solid; }
+  .action-button:hover {
+    color: white;
+    border-color: white;
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow)); }
+
+/*# sourceMappingURL=custom.css.map */
