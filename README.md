@@ -10,6 +10,24 @@ Website of the band Chicken Dinner
   - Das wird dann durch Webpack gejagt und was dabei im `dist`-Ordner hintenraus fällt, lädt man per FTP auf den Webspace hoch.
 - Es gibt kein Content-Management-System, die Inhalte stehen direkt in den Quelldateien.
 
+_TODO:_ Was in `reference` steht, sollte in `src` überführt werden:
+
+- [ ] Fonts
+- [ ] Icons: fontawesome
+- [ ] jQuery: slick-slider, lightbox, featherlight
+- [ ] Startseite Layout (Sidebar mit Navigation, Logo)
+- [ ] Startseite: Willkommen (großes Bild)
+- [ ] Startseite: Unsere Musik (Songauswahl)
+- [ ] Startseite: Das sind wir (Einzelbilder)
+- [ ] Startseite: Action! (Bildergalerie)
+- [ ] Startseite: Action! (YouTube-Einbettung)
+- [ ] Startseite: Events
+- [ ] Startseite: Schreib uns
+- [ ] Startseite: Hühnchenslider
+- [ ] Datenschutz
+- [ ] Impressum
+
+
 ## Developing
 
 `npm run watch`
