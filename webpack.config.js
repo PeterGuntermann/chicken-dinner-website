@@ -53,7 +53,21 @@ module.exports = {
       // Refer to https://github.com/jantimon/html-webpack-plugin#options
       title: 'Chicken Dinner',
       filename: 'index.html',
-      template: 'src/template.html',
+      template: 'src/pages/home.html',
+      favicon: 'src/images/favicon/favicon-warnschild-64.ico'
+    }),
+    new HtmlWebpackPlugin({
+      // Refer to https://github.com/jantimon/html-webpack-plugin#options
+      title: 'Impressum',
+      filename: 'impressum.html',
+      template: 'src/pages/impressum.html',
+      favicon: 'src/images/favicon/favicon-warnschild-64.ico'
+    }),
+    new HtmlWebpackPlugin({
+      // Refer to https://github.com/jantimon/html-webpack-plugin#options
+      title: 'Datenschutz',
+      filename: 'datenschutz.html',
+      template: 'src/pages/datenschutz.html',
       favicon: 'src/images/favicon/favicon-warnschild-64.ico'
     }),
     new ESLintPlugin(),

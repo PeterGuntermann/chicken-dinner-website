@@ -12,23 +12,8 @@
     "npm": "^10"
   },
   "scripts": {
-    "clean": "rimraf dist/*",
-    "css:autoprefixer": "postcss -u autoprefixer -r dist/*.css",
-    "css:scss": "node-sass --output-style compressed -o dist src/scss",
-    "css:lint": "stylelint src/scss/*.scss --custom-syntax postcss-scss",
-    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer",
-    "build:js": "webpack --mode=production",
-    "build:html": "posthtml -c posthtml.json",
-    "build:images": "imagemin src/images/**/* --out-dir=dist/images",
-    "build:all": "run-s build:*",
     "build": "webpack --mode=production",
-    "dev": "webpack serve",
-    "serve": "browser-sync start --server \"dist\" --files \"dist\"",
-    "watch:css": "onchange \"src/scss\" -- npm run build:css",
-    "watch:html": "onchange \"src/views\" -- npm run build:html",
-    "watch:images": "onchange \"src/images\" -- npm run build:images",
-    "watch:js": "onchange \"src/js\" -- webpack --mode=development",
-    "watch": "run-p serve watch:*"
+    "dev": "webpack serve"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -39,6 +24,7 @@
     "css-loader": "^6.10.0",
     "eslint": "^8.57.0",
     "eslint-webpack-plugin": "^3.1.1",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "^5.6.0",
     "htmlnano": "^2.1.0",
     "imagemin-cli": "^7.0.0",
@@ -54,7 +40,6 @@
     "sass": "^1.72.0",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
-    "stylelint": "^16.2.1",
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.3"
