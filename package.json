@@ -5,7 +5,7 @@
   "author": "Peter Guntermann",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vincenius/static-website-template"
+    "url": "https://github.com/PeterGuntermann/chicken-dinner-website"
   },
   "engines": {
     "node": "^20",
