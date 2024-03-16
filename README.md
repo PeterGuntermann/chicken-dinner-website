@@ -13,7 +13,7 @@ Es gibt kein Content-Management-System, die Inhalte stehen direkt in den Quellda
 Im Watch-mode kann man seine Änderungen auf `localhost:3000` sehen.
 
 ```
-npm run watch
+npm run dev
 ```
 
 Wenn man fertig ist, baut man alles und es wird ein Ordner `dist` erzeugt.
@@ -40,3 +40,6 @@ Diesen lädt man dann per FTP auf den Webspace hoch.
 - [ ] Startseite: Hühnchenslider
 - [ ] Datenschutz
 - [ ] Impressum
+- Webpack Optimierungen:
+  - [ ] [ImageMinimizer](https://webpack.js.org/plugins/image-minimizer-webpack-plugin/)
+  - [ ] HTML partials
