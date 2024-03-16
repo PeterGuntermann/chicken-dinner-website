@@ -1,16 +1,30 @@
 # chicken-dinner-website
 Website of the band Chicken Dinner
 
-## Ordnerstruktur
+## Voraussetzungen
 
-- In `reference` befindet sich eine (runtergehackte) statische Website _komplett ohne_ NodeJS, einfach nur HTML, (S)CSS, JS.
-- Diese ist sprechend nicht optimiert und alles muss 100% manuell gemacht werden, was auch ätzend zu pflegen ist.
-- Deswegen gibt es dieses Repository: 
-  - In `src` schreibt man mit angenehmer Developer-Experience den Sourcecode 
-  - Das wird dann durch Webpack gejagt und was dabei im `dist`-Ordner hintenraus fällt, lädt man per FTP auf den Webspace hoch.
-- Es gibt kein Content-Management-System, die Inhalte stehen direkt in den Quelldateien.
+- NodeJS ^20 und npm ^10 müssen installiert sein.
+- Am Anfang einmal `npm install` ausführen, um die Abhängigkeiten herunterzuladen.
 
-_TODO:_ Was in `reference` steht, sollte in `src` überführt werden:
+## Workflow
+
+In `src` schreibt man den Sourcecode.
+Es gibt kein Content-Management-System, die Inhalte stehen direkt in den Quelldateien.
+Im Watch-mode kann man seine Änderungen auf `localhost:3000` sehen.
+
+```
+npm run watch
+```
+
+Wenn man fertig ist, baut man alles und es wird ein Ordner `dist` erzeugt.
+
+```
+npm run build
+```
+
+Diesen lädt man dann per FTP auf den Webspace hoch.
+
+## TODO
 
 - [ ] Fonts
 - [ ] Icons: fontawesome
@@ -26,13 +40,3 @@ _TODO:_ Was in `reference` steht, sollte in `src` überführt werden:
 - [ ] Startseite: Hühnchenslider
 - [ ] Datenschutz
 - [ ] Impressum
-
-
-## Developing
-
-`npm run watch`
-
-## Deploying
-
-- Build `npm run build`
-- Upload folder `dist` to webspace
