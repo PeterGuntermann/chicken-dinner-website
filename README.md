@@ -1,6 +1,12 @@
 # chicken-dinner-website
 Website of the band Chicken Dinner
 
+## Referenzmaterial
+
+- Im Ordner `referenzmaterial` befindet sich ein Prototyp ohne NodeJS.
+- Das Problem damit ist, dass er in keiner Weise optimiert und auch eher sperrig zu pflegen ist.
+- Daher der Gedanke, den Webpack-Bundler dazwischen zu schalten.
+
 ## Voraussetzungen
 
 - NodeJS ^20 und npm ^10 müssen installiert sein.
