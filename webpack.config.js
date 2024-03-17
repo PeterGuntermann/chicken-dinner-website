@@ -2,7 +2,32 @@ const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const favicon = 'src/images/favicon/favicon-warnschild-64.ico';
+const plugins = [
+  new HtmlWebpackPlugin({
+    // Refer to https://github.com/jantimon/html-webpack-plugin#options
+    title: 'Chicken Dinner',
+    filename: 'index.html',
+    template: 'src/pages/home.html',
+    favicon,
+  }),
+  new HtmlWebpackPlugin({
+    title: 'Impressum - Chicken Dinner',
+    filename: 'impressum.html',
+    template: 'src/pages/impressum.html',
+    favicon,
+  }),
+  new HtmlWebpackPlugin({
+    title: 'Datenschutz - Chicken Dinner',
+    filename: 'datenschutz.html',
+    template: 'src/pages/datenschutz.html',
+    favicon,
+  }),
+  new ESLintPlugin(),
+];
+
 module.exports = {
+  plugins: plugins,
   mode: 'development',
   entry: {
     bundle: path.resolve(__dirname, 'src/js/main.js'),
@@ -11,7 +36,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
     clean: true,
-    assetModuleFilename: 'assets/[name][ext]'
+    assetModuleFilename: 'assets/[name][ext]',
   },
   devtool: 'source-map',
   devServer: {
@@ -44,32 +69,8 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
-        type: 'asset/resource'
-      }
+        type: 'asset/resource',
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      // Refer to https://github.com/jantimon/html-webpack-plugin#options
-      title: 'Chicken Dinner',
-      filename: 'index.html',
-      template: 'src/pages/home.html',
-      favicon: 'src/images/favicon/favicon-warnschild-64.ico'
-    }),
-    new HtmlWebpackPlugin({
-      // Refer to https://github.com/jantimon/html-webpack-plugin#options
-      title: 'Impressum',
-      filename: 'impressum.html',
-      template: 'src/pages/impressum.html',
-      favicon: 'src/images/favicon/favicon-warnschild-64.ico'
-    }),
-    new HtmlWebpackPlugin({
-      // Refer to https://github.com/jantimon/html-webpack-plugin#options
-      title: 'Datenschutz',
-      filename: 'datenschutz.html',
-      template: 'src/pages/datenschutz.html',
-      favicon: 'src/images/favicon/favicon-warnschild-64.ico'
-    }),
-    new ESLintPlugin(),
-  ],
 };

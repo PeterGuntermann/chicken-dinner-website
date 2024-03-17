@@ -1,34 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="<%= htmlWebpackPlugin.options.favicon %>"
-    />
-  </head>
+  <%= require('html-loader!./layout/head.html').default %>
 
   <body>
     <%= require('html-loader!./home/sidebar.html').default %>
 
-    <p><a href="impressum.html">Impressum</a></p>
-    <p><a href="datenschutz.html">Datenschutz</a></p>
-
     <div id="wrapper">
-      <%= require('html-loader!./home/willkommen.html').default %>
-      <%= require('html-loader!./home/unsere-musik.html').default %>
-      <%= require('html-loader!./home/das-sind-wir.html').default %>
-      <%= require('html-loader!./home/action.html').default %>
-      <%= require('html-loader!./home/kontakt.html').default %>
-      <%= require('html-loader!./home/huehnchen-slider.html').default %>
+      <%= require('html-loader!./home/willkommen.html').default %> <%=
+      require('html-loader!./home/unsere-musik.html').default %> <%=
+      require('html-loader!./home/das-sind-wir.html').default %> <%=
+      require('html-loader!./home/action.html').default %> <%=
+      require('html-loader!./home/kontakt.html').default %> <%=
+      require('html-loader!./home/huehnchen-slider.html').default %>
     </div>
   </body>
 </html>
