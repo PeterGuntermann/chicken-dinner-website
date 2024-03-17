@@ -1,6 +1,12 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-@import 'colors.scss';
+@import '../../vendor/html5up-hyperspace/assets/css/main.css';
+
+// General
+@import 'colors';
 @import 'fonts';
-@import 'global.scss';
+@import 'global';
+
+// Page specific
+@import 'home';
 

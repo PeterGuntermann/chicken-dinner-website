@@ -23,7 +23,7 @@ const plugins = [
     template: 'src/pages/datenschutz.html',
     favicon,
   }),
-  new ESLintPlugin(),
+  // new ESLintPlugin(),
 ];
 
 module.exports = {

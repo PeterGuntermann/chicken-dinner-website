@@ -1,3 +1,9 @@
-$defaultFont: #606060;
-$subtleBg: #f5f5f5;
-$primary: #74d1f6;
+:root {
+  --color1: hsl(30deg 3% 12%);
+  --color-yellow: #f5d402;
+  --color-orange: #f59402;
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}

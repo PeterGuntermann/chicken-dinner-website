@@ -1,0 +1,68 @@
+#intro {
+  background: none;
+
+  .inner {
+      padding: 0;
+
+      picture {
+          max-width: 1280px;
+      }
+  }
+}
+
+#beschreibung {
+  .inner {
+      text-align: center;
+  }
+
+  #der-mix-machts {
+      ul {
+          list-style-type: none;
+          padding-left: 2rem;
+          font-size: 1rem;
+      }
+  }
+
+  #repertoire {
+      column-count: 2;
+      font-size: 0.875rem;
+
+      & > p {
+          margin-bottom: 0.75rem;
+      }
+  }
+}
+
+
+#wir .inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media screen and (max-width: 736px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+      width: 100%;
+  }
+}
+
+#huehnchenslider {
+  .inner {
+      padding: 0;
+  }
+}
+
+#gallery-segelfest2022 {
+  // https://css-tricks.com/a-responsive-grid-layout-with-no-media-queries/
+  --auto-grid-min-size: 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+
+  img {
+      width: 100%;
+  }
+
+}
