@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
-  <%= require('html-loader!./layout/head.html').default %>
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="<%= htmlWebpackPlugin.options.favicon %>"
+    />
+    <%= require('html-loader!./layout/head.html').default %>
+  </head>
 
   <body>
     <div class="ce_text first block">
