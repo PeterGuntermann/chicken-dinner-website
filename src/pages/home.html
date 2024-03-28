@@ -14,12 +14,26 @@
     <%= require('html-loader!./home/sidebar.html').default %>
 
     <div id="wrapper">
-      <%= require('html-loader!./home/willkommen.html').default %> <%=
-      require('html-loader!./home/unsere-musik.html').default %> <%=
-      require('html-loader!./home/das-sind-wir.html').default %> <%=
-      require('html-loader!./home/action.html').default %> <%=
-      require('html-loader!./home/kontakt.html').default %> <%=
-      require('html-loader!./home/huehnchen-slider.html').default %>
+      <section id="willkommen">
+        <%= require('html-loader!./home/willkommen.html').default %>
+      </section>
+      <section id="unsere-musik">
+        <%= require('html-loader!./home/unsere-musik.html').default %>
+      </section>
+      <section id="das-sind-wir">
+        <%= require('html-loader!./home/das-sind-wir.html').default %>
+      </section>
+      <section id="action">
+        <%= require('html-loader!./home/action.html').default %>
+      </section>
+      <section id="kontakt">
+        <%= require('html-loader!./home/kontakt.html').default %>
+      </section>
+      <section id="huehnchen-slider">
+        <%= require('html-loader!./home/huehnchen-slider.html').default %>
+      </section>
     </div>
+
+    <%= require('html-loader!./layout/footer.html').default %>
   </body>
 </html>

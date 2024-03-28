@@ -9,18 +9,21 @@ const plugins = [
     title: 'Chicken Dinner',
     filename: 'index.html',
     template: 'src/pages/home.html',
+    inject: true,
     favicon,
   }),
   new HtmlWebpackPlugin({
     title: 'Impressum - Chicken Dinner',
     filename: 'impressum.html',
     template: 'src/pages/impressum.html',
+    inject: true,
     favicon,
   }),
   new HtmlWebpackPlugin({
     title: 'Datenschutz - Chicken Dinner',
     filename: 'datenschutz.html',
     template: 'src/pages/datenschutz.html',
+    inject: true,
     favicon,
   }),
   // new ESLintPlugin(),
@@ -30,7 +33,7 @@ module.exports = {
   plugins: plugins,
   mode: 'development',
   entry: {
-    bundle: path.resolve(__dirname, 'src/js/main.js'),
+    home: path.resolve(__dirname, 'src/js/main.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -67,10 +70,8 @@ module.exports = {
           },
         },
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
-        type: 'asset/resource',
-      },
+      { test: /\.(png|svg|jpg|jpeg|gif|ico)$/i, type: 'asset/resource' },
+      // { test: /\.html$/, loader: 'html-loader' },
     ],
   },
 };
