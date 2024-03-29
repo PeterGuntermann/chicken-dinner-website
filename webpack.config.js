@@ -1,6 +1,7 @@
 const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const favicon = 'src/images/favicon/favicon-warnschild-64.ico';
 const plugins = [
@@ -27,6 +28,12 @@ const plugins = [
     favicon,
   }),
   // new ESLintPlugin(),
+  new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    breakpoints: path.resolve(path.join(__dirname, 'vendor/html5up-hyperspace/assets/js/breakpoints.min.js')),
+    browser: path.resolve(path.join(__dirname, 'vendor/html5up-hyperspace/assets/js/browser.min.js')),
+  }),
 ];
 
 module.exports = {
@@ -47,9 +54,9 @@ module.exports = {
       directory: path.resolve(__dirname, 'dist'),
     },
     port: 3000,
-    open: {
-      app: { name: 'chrome' },
-    },
+    // open: {
+    //   app: { name: 'chrome' },
+    // },
     hot: true,
     compress: true,
     historyApiFallback: true,
