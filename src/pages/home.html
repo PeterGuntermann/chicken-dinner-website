@@ -10,26 +10,33 @@
     <%= require('html-loader!./layout/head.html').default %>
   </head>
 
-  <body>
-    <%= require('html-loader!./home/sidebar.html').default %>
+  <body class="is-preload">
+    <section id="sidebar">
+      <%= require('html-loader!./home/sidebar.html').default %>
+    </section>
 
     <div id="wrapper">
-      <section id="willkommen">
+      <section id="willkommen" class="wrapper fade-up">
         <%= require('html-loader!./home/willkommen.html').default %>
       </section>
-      <section id="unsere-musik">
+
+      <section id="unsere-musik" class="wrapper fade-up">
         <%= require('html-loader!./home/unsere-musik.html').default %>
       </section>
-      <section id="das-sind-wir">
+
+      <section id="das-sind-wir" class="wrapper fade-up mb-4">
         <%= require('html-loader!./home/das-sind-wir.html').default %>
       </section>
-      <section id="action">
+
+      <section id="action" class="wrapper fade-up mb-4">
         <%= require('html-loader!./home/action.html').default %>
       </section>
-      <section id="kontakt">
+
+      <section id="kontakt" class="wrapper fade-up mb-4">
         <%= require('html-loader!./home/kontakt.html').default %>
       </section>
-      <section id="huehnchen-slider">
+
+      <section id="huehnchen-slider" class="wrapper fade-up mb-4">
         <%= require('html-loader!./home/huehnchen-slider.html').default %>
       </section>
     </div>
