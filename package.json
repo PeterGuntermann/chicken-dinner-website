@@ -15,6 +15,10 @@
     "build": "webpack --mode=production",
     "dev": "webpack serve"
   },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.23.9",
@@ -43,9 +47,5 @@
     "webpack": "^5.90.3",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.3"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "jquery": "^3.7.1"
   }
 }
