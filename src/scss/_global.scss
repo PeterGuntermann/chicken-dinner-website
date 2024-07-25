@@ -10,47 +10,47 @@ a {
   padding: 0.5em 2.5em;
 
   @media screen and (max-width: 1280px) {
-      padding: 0;
+    padding: 0;
   }
 
   .inner {
-      justify-content: space-between;
+    justify-content: space-between;
 
-      @media screen and (max-width: 1280px) {
-          justify-content: center;
-      }
+    @media screen and (max-width: 1280px) {
+      justify-content: center;
+    }
   }
 
   nav {
-      a:before {
-          background: hsl(36deg, 98%, 30%);
-      }
+    a:before {
+      background: hsl(36deg, 98%, 30%);
+    }
 
-      a:after,
-      a.active:after {
-          background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
-      }
+    a:after,
+    a.active:after {
+      background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
+    }
 
-      & > ul > li {
-          margin-top: 1rem;
+    & > ul > li {
+      margin-top: 1rem;
 
-          @media screen and (max-width: 1280px) {
-              margin-top: 0;
-          }
+      @media screen and (max-width: 1280px) {
+        margin-top: 0;
       }
+    }
   }
 
   .sidebar-logo,
   .sidebar-warnschild {
-      max-width: 200px;
+    max-width: 200px;
 
-      img {
-          width: 100%;
-      }
+    img {
+      width: 100%;
+    }
 
-      @media screen and (max-width: 1280px) {
-          display: none;
-      }
+    @media screen and (max-width: 1280px) {
+      display: none;
+    }
   }
 }
 
@@ -78,7 +78,7 @@ h2 {
 body {
   &.impressum,
   &.datenschutz {
-      padding: 2rem;
+    padding: 2rem;
   }
 }
 
@@ -86,47 +86,47 @@ body {
   display: none;
 
   @media screen and (max-width: 1280px) {
-      display: block;
+    display: block;
   }
 
   .image_container {
-      text-align: center;
+    text-align: center;
   }
 
   img {
-      width: 250px;
-      height: auto;
+    width: 250px;
+    height: auto;
   }
 }
 
 .slider {
   .slick-dots {
-      position: relative;
-      bottom: 0;
+    position: relative;
+    bottom: 0;
 
-      button {
-          background: transparent;
-          border-radius: 50%;
+    button {
+      background: transparent;
+      border-radius: 50%;
 
-          &:before {
-              content: "";
-          }
+      &:before {
+        content: "";
       }
+    }
 
-      .slick-active button {
-          background: var(--color-yellow);
-          opacity: 0.5;
-      }
+    .slick-active button {
+      background: var(--color-yellow);
+      opacity: 0.5;
+    }
   }
 }
 
 .lightbox {
   .lb-outerContainer {
-      background: var(--color1);
+    background: var(--color1);
   }
 
   .lb-image {
-      border: 2px solid transparent;
+    border: 2px solid transparent;
   }
 }
 
@@ -141,8 +141,8 @@ body {
   border-style: solid;
 
   &:hover {
-      color: white;
-      border-color: white;
-      background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
+    color: white;
+    border-color: white;
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
   }
 }
