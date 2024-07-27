@@ -25,7 +25,11 @@
 
     a:after,
     a.active:after {
-      background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
+      background-image: linear-gradient(
+        to right,
+        var(--color-orange),
+        var(--color-yellow)
+      );
     }
 
     & > ul {
@@ -88,7 +92,6 @@
   }
 }
 
-
 #wir .inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -119,5 +122,4 @@
   img {
     width: 100%;
   }
-
 }

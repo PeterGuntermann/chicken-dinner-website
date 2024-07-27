@@ -6,7 +6,6 @@ a {
   border-bottom: 0;
 }
 
-
 body,
 #sidebar {
   background-color: var(--color1);
@@ -62,7 +61,7 @@ body {
       border-radius: 50%;
 
       &:before {
-        content: "";
+        content: '';
       }
     }
 
