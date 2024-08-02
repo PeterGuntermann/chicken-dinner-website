@@ -1,0 +1,9 @@
+:root {
+  --color1: hsl(30deg 3% 12%);
+  --color-yellow: #f5d402;
+  --color-orange: #f59402;
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}

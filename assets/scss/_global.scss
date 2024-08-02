@@ -1,0 +1,100 @@
+body {
+  font-family: 'NotoSans', Arial, sans-serif;
+}
+
+a {
+  border-bottom: 0;
+}
+
+body,
+#sidebar {
+  background-color: var(--color1);
+  font-family: 'NotoSans', Arial, sans-serif;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'NotoSans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+body {
+  &.impressum,
+  &.datenschutz {
+    padding: 2rem;
+  }
+}
+
+.center-logo {
+  display: none;
+
+  @media screen and (max-width: 1280px) {
+    display: block;
+  }
+
+  .image_container {
+    text-align: center;
+  }
+
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.slider {
+  .slick-dots {
+    position: relative;
+    bottom: 0;
+
+    button {
+      background: transparent;
+      border-radius: 50%;
+
+      &:before {
+        content: '';
+      }
+    }
+
+    .slick-active button {
+      background: var(--color-yellow);
+      opacity: 0.5;
+    }
+  }
+}
+
+.lightbox {
+  .lb-outerContainer {
+    background: var(--color1);
+  }
+
+  .lb-image {
+    border: 2px solid transparent;
+  }
+}
+
+.action-button {
+  display: block;
+  background-image: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: var(--color-yellow);
+  border-color: var(--color-orange);
+  border-width: 1px;
+  border-style: solid;
+
+  &:hover {
+    color: white;
+    border-color: white;
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
+  }
+}
