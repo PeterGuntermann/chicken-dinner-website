@@ -1,17 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HomeContent from '~/components/home-content.vue';
+</script>
 
 <template>
-  <h1>index page</h1>
+  <Navigation />
 
-  <NuxtLink to="/datenschutz">datenschutz</NuxtLink>
-  <NuxtLink to="/impressum">impressum</NuxtLink>
+  <section id="content">
+    <HomeContent />
+  </section>
 
-  <NuxtImg
-    src="/images/sidebar/warning-sign.png"
-    sizes="100vw sm:50vw md:400px"
-    loading="lazy"
-    alt="Discover Nuxt 3"
-  />
+  <Footer />
 </template>
 
 <style scoped></style>
