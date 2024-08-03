@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Events from '~/components/events.vue';
+</script>
 
 <template>
   <NuxtImg
@@ -26,7 +28,7 @@
     <br />
     Instagram
     <br />
-    Events
+    <Events />
   </section>
 
   <section id="kontakt">Schreib uns</section>
