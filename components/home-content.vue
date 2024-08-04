@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
 import GalerieWir from '~/components/galerie-wir.vue';
+import InstagramLink from '~/components/instagram-link.vue';
 import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
 </script>
 
@@ -28,7 +29,7 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
     <br />
     <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
     <br />
-    Instagram
+    <InstagramLink />
     <br />
     <Events />
   </section>
