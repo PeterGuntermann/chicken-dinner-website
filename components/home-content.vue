@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
+import Galerie2024 from '~/components/galerie-2024.vue';
+import GalerieHuehnchen from '~/components/galerie-huehnchen.vue';
 import GalerieWir from '~/components/galerie-wir.vue';
 import InstagramLink from '~/components/instagram-link.vue';
+import SchreibUns from '~/components/schreib-uns.vue';
 import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
 </script>
 
@@ -19,13 +22,18 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
   </section>
 
   <section id="unsere-musik">
-    Die Band für deinen Hühnerstall
-    <br />
+    <h1>Die Band für deinen Hühnerstall</h1>
+
+    <DerMixMachts />
+  </section>
+
+  <section id="das-sind-wir">
     <GalerieWir />
   </section>
 
   <section id="action">
-    Galerie 2024
+    <h2>So sieht's in Aktion aus</h2>
+    <Galerie2024 />
     <br />
     <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
     <br />
@@ -34,9 +42,13 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
     <Events />
   </section>
 
-  <section id="kontakt">Schreib uns</section>
+  <section id="kontakt">
+    <SchreibUns />
+  </section>
 
-  <section id="huehnchen-slider">Hühnchen-Slider</section>
+  <section id="huehnchen-slider">
+    <GalerieHuehnchen />
+  </section>
 </template>
 
 <style scoped></style>
