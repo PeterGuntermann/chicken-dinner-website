@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
+import GalerieWir from '~/components/galerie-wir.vue';
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import Events from '~/components/events.vue';
   <section id="unsere-musik">
     Die Band für deinen Hühnerstall
     <br />
-    Wir-Galerie
+    <GalerieWir />
   </section>
 
   <section id="action">
