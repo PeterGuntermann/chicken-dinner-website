@@ -12,7 +12,7 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
   />
 
   <section id="willkommen">
-    Teaser Video
+    <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
     <br />
     <WillkommenGruppenbild />
   </section>
@@ -26,7 +26,7 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
   <section id="action">
     Galerie 2024
     <br />
-    Teaser-Video
+    <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
     <br />
     Instagram
     <br />
