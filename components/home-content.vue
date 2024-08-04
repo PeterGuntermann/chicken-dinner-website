@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
 import GalerieWir from '~/components/galerie-wir.vue';
+import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import GalerieWir from '~/components/galerie-wir.vue';
   <section id="willkommen">
     Teaser Video
     <br />
-    Wir-Bild
+    <WillkommenGruppenbild />
   </section>
 
   <section id="unsere-musik">
