@@ -20,16 +20,13 @@ const demnaechst = events.filter((event) => datum(event) > heute);
 
   <ul>
     <li v-for="event in demnaechst">
-      <time>
-        {{
-          new Date(event.datum).toLocaleDateString('de-de', {
-            weekday: 'short',
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-          })
-        }}
-      </time>
+      <NuxtTime
+        :datetime="new Date(event.datum)"
+        weekday="short"
+        year="numeric"
+        month="short"
+        day="numeric"
+      />
       –
       <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
       <span v-else> {{ event.titel }} </span>
@@ -40,12 +37,7 @@ const demnaechst = events.filter((event) => datum(event) > heute);
 
   <ul>
     <li v-for="event in zuletzt">
-      <time>{{
-        new Date(event.datum).toLocaleDateString('de-de', {
-          year: 'numeric',
-          month: 'short',
-        })
-      }}</time>
+      <NuxtTime :datetime="new Date(event.datum)" year="numeric" month="short" />
       –
       <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
       <span v-else> {{ event.titel }} </span>
