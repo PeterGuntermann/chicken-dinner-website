@@ -6,6 +6,7 @@ import GalerieWir from '~/components/galerie-wir.vue';
 import InstagramLink from '~/components/instagram-link.vue';
 import SchreibUns from '~/components/schreib-uns.vue';
 import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
+import { HomeSections } from '~/constants';
 </script>
 
 <template>
@@ -15,23 +16,23 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
     loading="lazy"
   />
 
-  <section id="willkommen">
+  <section :id="HomeSections.willkommen">
     <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
     <br />
     <WillkommenGruppenbild />
   </section>
 
-  <section id="unsere-musik">
+  <section :id="HomeSections.unsereMusik">
     <h1>Die Band für deinen Hühnerstall</h1>
 
     <DerMixMachts />
   </section>
 
-  <section id="das-sind-wir">
+  <section :id="HomeSections.dasSindWir">
     <GalerieWir />
   </section>
 
-  <section id="action">
+  <section :id="HomeSections.inAktion">
     <h2>So sieht's in Aktion aus</h2>
     <Galerie2024 />
     <br />
@@ -42,11 +43,11 @@ import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
     <Events />
   </section>
 
-  <section id="kontakt">
+  <section :id="HomeSections.kontakt">
     <SchreibUns />
   </section>
 
-  <section id="huehnchen-slider">
+  <section :id="HomeSections.huehnchenSlider">
     <GalerieHuehnchen />
   </section>
 </template>
