@@ -10,15 +10,20 @@ import { HomeSections } from '~/constants';
 </script>
 
 <template>
-  <NuxtImg
-    src="/images/sidebar/logo-white-800px.png"
-    alt="Chicken Dinner Logo"
-    loading="lazy"
-  />
+  <div class="d-flex justify-content-center mb-5">
+    <NuxtImg
+      src="/images/sidebar/logo-white-800px.png"
+      alt="Chicken Dinner Logo"
+      loading="lazy"
+      width="250"
+    />
+  </div>
 
   <section :id="HomeSections.willkommen">
-    <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
-    <br />
+    <div class="d-flex justify-content-center mb-5">
+      <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
+    </div>
+
     <WillkommenGruppenbild />
   </section>
 
@@ -35,9 +40,11 @@ import { HomeSections } from '~/constants';
   <section :id="HomeSections.inAktion">
     <h2>So sieht's in Aktion aus</h2>
     <Galerie2024 />
-    <br />
-    <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
-    <br />
+
+    <div class="d-flex justify-content-center mb-5">
+      <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
+    </div>
+
     <InstagramLink />
     <br />
     <Events />
