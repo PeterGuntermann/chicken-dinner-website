@@ -15,11 +15,19 @@ import { HomeSections } from '~/constants';
 </template>
 
 <style scoped>
+nav {
+  position: fixed;
+  background: var(--color1);
+  width: 100%;
+  z-index: 1000;
+}
+
 ul {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li:not(:first-child) {
@@ -51,11 +59,11 @@ a {
   }
 
   &::before {
-    background: #975b02;
+    background: var(--color-brown);
   }
 
   &::after {
-    background-image: linear-gradient(to right, #f59402, #f5d402);
+    background-image: linear-gradient(to right, var(--color-orange), var(--color-yellow));
     max-width: 0;
     transition: max-width 0.2s ease-in-out;
   }
