@@ -28,8 +28,7 @@ import { HomeSections } from '~/constants';
   </section>
 
   <section :id="HomeSections.unsereMusik">
-    <h1>Die Band für deinen Hühnerstall</h1>
-
+    <h1 class="text-center">Die Band für deinen Hühnerstall!</h1>
     <DerMixMachts />
   </section>
 

@@ -20,19 +20,26 @@ textarea {
   font-family: 'NotoSans', Arial, sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Anton', sans-serif;
-  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 body {
