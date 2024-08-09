@@ -17,7 +17,7 @@ import { HomeSections } from '~/constants';
 <style scoped>
 nav {
   position: fixed;
-  background: var(--color1);
+  background: var(--color-black);
   width: 100%;
   z-index: 1000;
 }
@@ -36,7 +36,7 @@ li:not(:first-child) {
 
 a {
   align-content: center;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--color-gray-dark);
   display: block;
   font-size: 0.6rem;
   font-weight: bold;
@@ -73,7 +73,7 @@ a {
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--color-gray-light);
   }
 }
 </style>
