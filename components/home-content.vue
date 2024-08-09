@@ -24,11 +24,12 @@ import { HomeSections } from '~/constants';
       <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
     </div>
 
+    <h1>Die Band für deinen Hühnerstall!</h1>
+
     <WillkommenGruppenbild />
   </section>
 
   <section :id="HomeSections.unsereMusik">
-    <h1 class="text-center">Die Band für deinen Hühnerstall!</h1>
     <DerMixMachts />
   </section>
 
@@ -62,7 +63,7 @@ import { HomeSections } from '~/constants';
 :target::before {
   content: '';
   display: block;
-  height: 3.5rem; /* fixed header height*/
-  margin: -3.5rem 0 0; /* negative fixed header height */
+  height: 5rem; /* fixed header height*/
+  margin: -5rem 0 0; /* negative fixed header height */
 }
 </style>

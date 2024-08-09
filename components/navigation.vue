@@ -68,6 +68,10 @@ a {
     transition: max-width 0.2s ease-in-out;
   }
 
+  &.active {
+    color: var(--color-gray-light);
+  }
+
   &.active::after {
     max-width: 100%;
   }
