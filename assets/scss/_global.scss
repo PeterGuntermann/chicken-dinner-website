@@ -51,59 +51,9 @@ h3 {
   margin-bottom: 1rem;
 }
 
-body {
-  &.impressum,
-  &.datenschutz {
-    padding: 2rem;
-  }
-}
-
-.center-logo {
-  display: none;
-
-  @media screen and (max-width: 1280px) {
-    display: block;
-  }
-
-  .image_container {
-    text-align: center;
-  }
-
-  img {
-    width: 250px;
-    height: auto;
-  }
-}
-
-.slider {
-  .slick-dots {
-    position: relative;
-    bottom: 0;
-
-    button {
-      background: transparent;
-      border-radius: 50%;
-
-      &:before {
-        content: '';
-      }
-    }
-
-    .slick-active button {
-      background: var(--color-yellow);
-      opacity: 0.5;
-    }
-  }
-}
-
-.lightbox {
-  .lb-outerContainer {
-    background: var(--color-black);
-  }
-
-  .lb-image {
-    border: 2px solid transparent;
-  }
+.card {
+  color: var(--color-gray-light);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .action-button {

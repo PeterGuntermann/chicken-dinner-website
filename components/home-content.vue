@@ -46,7 +46,9 @@ import { HomeSections } from '~/constants';
     </div>
 
     <InstagramLink />
-    <br />
+  </section>
+
+  <section :id="HomeSections.events">
     <Events />
   </section>
 
@@ -65,5 +67,9 @@ import { HomeSections } from '~/constants';
   display: block;
   height: 5rem; /* fixed header height*/
   margin: -5rem 0 0; /* negative fixed header height */
+}
+
+section {
+  margin-bottom: 5rem;
 }
 </style>

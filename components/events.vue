@@ -16,33 +16,35 @@ const demnaechst = events.filter((event) => datum(event) > heute);
 <template>
   <h2>Events</h2>
 
-  <h3>Demnächst</h3>
+  <div class="mb-5">
+    <h3>Demnächst</h3>
 
-  <ul>
-    <li v-for="event in demnaechst">
-      <NuxtTime
-        :datetime="new Date(event.datum)"
-        weekday="short"
-        year="numeric"
-        month="short"
-        day="numeric"
-      />
-      –
-      <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
-      <span v-else> {{ event.titel }} </span>
-    </li>
-  </ul>
+    <ul>
+      <li v-for="event in demnaechst">
+        <NuxtTime
+          :datetime="new Date(event.datum)"
+          weekday="short"
+          year="numeric"
+          month="short"
+          day="numeric"
+        />
+        –
+        <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
+        <span v-else> {{ event.titel }} </span>
+      </li>
+    </ul>
 
-  <h3>Zuletzt</h3>
+    <h3>Zuletzt</h3>
 
-  <ul>
-    <li v-for="event in zuletzt">
-      <NuxtTime :datetime="new Date(event.datum)" year="numeric" month="short" />
-      –
-      <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
-      <span v-else> {{ event.titel }} </span>
-    </li>
-  </ul>
+    <ul>
+      <li v-for="event in zuletzt">
+        <NuxtTime :datetime="new Date(event.datum)" year="numeric" month="short" />
+        –
+        <a v-if="event.link" :href="event.link" target="_blank"> {{ event.titel }} </a>
+        <span v-else> {{ event.titel }} </span>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped></style>
