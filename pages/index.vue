@@ -5,11 +5,19 @@ import HomeContent from '~/components/home-content.vue';
 <template>
   <Navigation />
 
-  <section id="content">
+  <section
+    id="content"
+    data-bs-spy="scroll"
+    data-bs-target="#navigation"
+    data-bs-offset="56"
+  >
     <HomeContent />
+    <Footer />
   </section>
-
-  <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+#content {
+  padding-top: 3.5rem;
+}
+</style>

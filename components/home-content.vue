@@ -10,7 +10,7 @@ import { HomeSections } from '~/constants';
 </script>
 
 <template>
-  <div class="d-flex justify-content-center mb-5">
+  <div class="d-flex justify-content-center my-5">
     <NuxtImg
       src="/images/sidebar/logo-white-800px.png"
       alt="Chicken Dinner Logo"
@@ -59,4 +59,11 @@ import { HomeSections } from '~/constants';
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+:target::before {
+  content: '';
+  display: block;
+  height: 3.5rem; /* fixed header height*/
+  margin: -3.5rem 0 0; /* negative fixed header height */
+}
+</style>
