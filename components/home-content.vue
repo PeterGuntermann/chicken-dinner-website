@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
-import Galerie2024 from '~/components/galerie-2024.vue';
 import GalerieHuehnchen from '~/components/galerie-huehnchen.vue';
 import GalerieWir from '~/components/galerie-wir.vue';
 import InstagramLink from '~/components/instagram-link.vue';
@@ -39,7 +38,7 @@ import { HomeSections } from '~/constants';
 
   <section :id="HomeSections.inAktion">
     <h2>So sieht's in Aktion aus</h2>
-    <Galerie2024 />
+    <Galerie2024Teaser />
 
     <div class="d-flex justify-content-center mb-5">
       <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
