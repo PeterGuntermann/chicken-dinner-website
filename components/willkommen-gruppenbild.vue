@@ -2,11 +2,7 @@
 
 <template>
   <div class="d-flex justify-content-center mb-5">
-    <NuxtImg
-      src="/images/wir/Gruppe-1600w.png"
-      loading="lazy"
-      sizes="100vw sm:90vw md:80vw"
-    />
+    <img class="img-fluid" src="/images/wir/Gruppe-1600w.png" loading="lazy" />
   </div>
 </template>
 

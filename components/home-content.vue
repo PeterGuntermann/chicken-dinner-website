@@ -9,7 +9,7 @@ import { HomeSections } from '~/constants';
 </script>
 
 <template>
-  <div class="d-flex justify-content-center my-5">
+  <div class="d-flex d-xl-none justify-content-center my-5">
     <NuxtImg
       src="/images/sidebar/logo-white-800px.png"
       alt="Chicken Dinner Logo"

@@ -3,7 +3,13 @@ import { HomeSections } from '~/constants';
 </script>
 
 <template>
-  <nav id="navigation" class="d-none d-sm-block">
+  <nav id="navigation" class="d-none d-sm-block d-xl-flex">
+    <img
+      class="img-fluid"
+      src="/images/sidebar/logo-white-800px.png"
+      alt="Chicken Dinner Logo"
+    />
+
     <ul>
       <li><a :href="`#${HomeSections.willkommen}`">Willkommen</a></li>
       <li><a :href="`#${HomeSections.unsereMusik}`">Unsere Musik</a></li>
@@ -12,10 +18,18 @@ import { HomeSections } from '~/constants';
       <li><a :href="`#${HomeSections.events}`">Events</a></li>
       <li><a :href="`#${HomeSections.kontakt}`">Schreib uns</a></li>
     </ul>
+
+    <img
+      class="img-fluid"
+      src="/images/sidebar/warning-sign.png"
+      alt="Chicken Dinner Warnschild"
+    />
   </nav>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use 'assets/scss/breakpoints';
+
 nav {
   position: fixed;
   background: var(--color-black);
@@ -79,6 +93,25 @@ a {
 
   &:hover {
     color: var(--color-gray-light);
+  }
+}
+
+@media (min-width: breakpoints.$xl) {
+  nav {
+    width: 18rem;
+    padding: 1rem 2.5rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li:not(:first-child) {
+    margin-left: 0;
+  }
+  a {
+    text-align: right;
   }
 }
 </style>
