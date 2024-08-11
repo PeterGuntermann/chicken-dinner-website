@@ -23,7 +23,9 @@ const repertoire: Song[] = content.body as unknown as Song[];
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use 'assets/scss/breakpoints';
+
 * {
   text-align: center;
 }
@@ -33,11 +35,17 @@ p {
 }
 
 .repertoire {
-  column-count: 2;
+  column-count: 1;
 
   em {
     color: var(--color-gray-dark);
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: breakpoints.$sm) {
+  .repertoire {
+    column-count: 2;
   }
 }
 </style>

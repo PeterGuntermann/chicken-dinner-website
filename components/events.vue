@@ -21,7 +21,10 @@ const demnaechst = events.filter((event) => datum(event) > heute);
     <h3>Demnächst</h3>
 
     <div class="row mb-5">
-      <div class="col-4 offset-4" v-for="event in demnaechst">
+      <div
+        class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4"
+        v-for="event in demnaechst"
+      >
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">
@@ -51,7 +54,7 @@ const demnaechst = events.filter((event) => datum(event) > heute);
     <h3>Zuletzt</h3>
 
     <div class="row">
-      <div class="col-3" v-for="event in zuletzt">
+      <div class="col-6 col-lg-3 mb-4" v-for="event in zuletzt">
         <div class="card">
           <div class="card-body">
             <p class="card-title">
@@ -74,4 +77,9 @@ const demnaechst = events.filter((event) => datum(event) > heute);
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+@use 'assets/scss/breakpoints';
+@media (min-width: breakpoints.$sm) {
+  //
+}
+</style>

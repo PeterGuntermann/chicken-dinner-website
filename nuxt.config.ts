@@ -4,5 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {},
   modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/image', '@nuxt/scripts', 'nuxt-time'],
-  css: ['bootstrap/dist/css/bootstrap.min.css', '~/assets/scss/custom.scss'],
+  css: ['bootstrap/scss/bootstrap.scss', '~/assets/scss/custom.scss'],
 });

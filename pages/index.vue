@@ -18,8 +18,11 @@ import HomeContent from '~/components/home-content.vue';
   </div>
 </template>
 
-<style scoped>
-#content {
-  padding-top: 3.5rem;
+<style scoped lang="scss">
+@use 'assets/scss/breakpoints';
+@media (min-width: breakpoints.$sm) {
+  #content {
+    padding-top: 3.5rem;
+  }
 }
 </style>

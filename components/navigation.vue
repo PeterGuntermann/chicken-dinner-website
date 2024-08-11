@@ -3,7 +3,7 @@ import { HomeSections } from '~/constants';
 </script>
 
 <template>
-  <nav id="navigation">
+  <nav id="navigation" class="d-none d-sm-block">
     <ul>
       <li><a :href="`#${HomeSections.willkommen}`">Willkommen</a></li>
       <li><a :href="`#${HomeSections.unsereMusik}`">Unsere Musik</a></li>

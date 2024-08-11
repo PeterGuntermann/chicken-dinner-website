@@ -3,14 +3,13 @@ const namen = ['Engin', 'Julia', 'Peter', 'Philipp', 'Sven', 'Timo'];
 </script>
 
 <template>
-  <div class="container">
-    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5">
-      <NuxtImg
-        v-for="name of namen"
+  <div class="row">
+    <div v-for="name of namen" class="col-6 col-md-4 mb-4">
+      <img
+        class="img-fluid"
         :src="`/images/wir/einzeln/${name}-1000px.JPG`"
         :alt="name"
         loading="lazy"
-        sizes="40vw sm:33vw md:25vw"
       />
     </div>
   </div>
