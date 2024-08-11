@@ -60,12 +60,20 @@ import { HomeSections } from '~/constants';
   </section>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@use 'assets/scss/breakpoints';
+
+// For scrollspy
 :target::before {
   content: '';
   display: block;
   height: 5rem;
   margin: -5rem 0 0;
+
+  @media (min-width: breakpoints.$xl) {
+    height: 2rem;
+    margin-top: -2rem;
+  }
 }
 
 section {

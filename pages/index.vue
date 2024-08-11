@@ -33,6 +33,7 @@ import HomeContent from '~/components/home-content.vue';
   .home-layout {
     display: flex;
   }
+
   #content {
     width: calc(100vw - 300px);
     margin-left: 300px;
