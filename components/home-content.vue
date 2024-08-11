@@ -20,7 +20,7 @@ import { HomeSections } from '~/constants';
 
   <section :id="HomeSections.willkommen">
     <div class="d-flex justify-content-center mb-5">
-      <LazyScriptYouTubePlayer video-id="g6yRB9wX2hw" />
+      <ScriptYouTubePlayer video-id="g6yRB9wX2hw" trigger="immediate" />
     </div>
 
     <h1>Die Band für deinen Hühnerstall!</h1>
@@ -41,7 +41,7 @@ import { HomeSections } from '~/constants';
     <Galerie2024Teaser />
 
     <div class="d-flex justify-content-center mb-5">
-      <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" />
+      <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" trigger="immediate" />
     </div>
 
     <InstagramLink />
