@@ -64,8 +64,8 @@ import { HomeSections } from '~/constants';
 :target::before {
   content: '';
   display: block;
-  height: 5rem; /* fixed header height*/
-  margin: -5rem 0 0; /* negative fixed header height */
+  height: 5rem;
+  margin: -5rem 0 0;
 }
 
 section {

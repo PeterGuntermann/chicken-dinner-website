@@ -1,16 +1,35 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const imgPath = (index: number) => `/images/huehnchen-slider/chicken${index}.jpg`;
+</script>
 
 <template>
   <div class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <NuxtImg src="/images/huehnchen-slider/chicken1.jpg" loading="lazy" />
+        <img
+          class="img-fluid"
+          :src="imgPath(1)"
+          alt="Ein braunes Huhn sieht direkt in die Kamera"
+          loading="lazy"
+        />
       </div>
+
       <div class="carousel-item">
-        <NuxtImg src="/images/huehnchen-slider/chicken2.jpg" loading="lazy" />
+        <img
+          class="img-fluid"
+          :src="imgPath(2)"
+          alt="Drei Hühner stehen im hohen Gras und schauen aus verschiedenen Winkeln in die Kamera"
+          loading="lazy"
+        />
       </div>
+
       <div class="carousel-item">
-        <NuxtImg src="/images/huehnchen-slider/chicken3.jpg" loading="lazy" />
+        <img
+          class="img-fluid"
+          :src="imgPath(3)"
+          alt="Close-up-Aufnahme eines krähenden Hahnes"
+          loading="lazy"
+        />
       </div>
     </div>
   </div>
