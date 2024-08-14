@@ -6,11 +6,14 @@ const imgPath = (index: number) => `/images/huehnchen-slider/chicken${index}.jpg
   <div class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img
+        <NuxtImg
           class="img-fluid"
           :src="imgPath(1)"
           alt="Ein braunes Huhn sieht direkt in die Kamera"
           loading="lazy"
+          sizes="1300"
+          width="1600"
+          height="900"
         />
       </div>
 
