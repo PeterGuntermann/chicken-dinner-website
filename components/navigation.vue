@@ -5,7 +5,7 @@ import { HomeSections } from '~/constants';
 <template>
   <nav id="navigation" class="d-none d-sm-block d-xl-flex">
     <img
-      class="img-fluid"
+      class="img-fluid d-none d-xl-block"
       src="/images/sidebar/logo-white-800px.png"
       alt="Chicken Dinner Logo"
     />
@@ -20,7 +20,7 @@ import { HomeSections } from '~/constants';
     </ul>
 
     <img
-      class="img-fluid"
+      class="img-fluid d-none d-xl-block"
       src="/images/sidebar/warning-sign.png"
       alt="Chicken Dinner Warnschild"
     />
