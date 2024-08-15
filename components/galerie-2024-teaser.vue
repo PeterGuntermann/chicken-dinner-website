@@ -4,7 +4,7 @@ const images = [3, 5, 10, 15].map((i) => (i < 10 ? `0${i}` : `${i}`));
 
 <template>
   <div class="row">
-    <div v-for="image of images" class="col-3 mb-4">
+    <div v-for="image of images" class="col-6 col-md-3 mb-4">
       <NuxtImg
         class="img-fluid"
         :src="`/images/galerie-2024/${image}.JPG`"

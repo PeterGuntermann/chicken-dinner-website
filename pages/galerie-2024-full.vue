@@ -15,7 +15,7 @@ const images = [...Array(27).keys()]
     </div>
 
     <div class="row">
-      <div v-for="image of images" class="col-4 mb-4">
+      <div v-for="image of images" class="col-12 col-sm-6 col-md-4 mb-4">
         <NuxtImg
           class="img-fluid"
           :src="`/images/galerie-2024/${image}.JPG`"
