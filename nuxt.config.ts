@@ -1,10 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {},
   compatibilityDate: '2024-04-03',
+  css: [
+    //
+    'bootstrap/scss/bootstrap.scss',
+    '~/assets/scss/custom.scss',
+  ],
   devtools: {
     enabled: true,
   },
-  app: {},
   modules: [
     //
     '@nuxt/content',
@@ -13,9 +18,10 @@ export default defineNuxtConfig({
     '@nuxt/scripts',
     'nuxt-time',
   ],
-  css: [
-    //
-    'bootstrap/scss/bootstrap.scss',
-    '~/assets/scss/custom.scss',
-  ],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
 });
