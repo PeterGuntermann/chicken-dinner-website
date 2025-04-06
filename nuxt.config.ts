@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     'nuxt-time',
   ],
   nitro: {
+    logLevel: 'trace',
     prerender: {
       crawlLinks: false,
       failOnError: false,
