@@ -25,6 +25,7 @@ import { HomeSections } from '~/constants';
 
     <h1>Die Band für deinen Hühnerstall!</h1>
 
+    <InstagramLink class="mb-5" />
     <WillkommenGruppenbild />
   </section>
 
