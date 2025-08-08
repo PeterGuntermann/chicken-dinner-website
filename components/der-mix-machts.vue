@@ -1,7 +1,9 @@
 <script setup lang="ts">
 type Song = { title: string; artist?: string };
-const content = await queryContent('/repertoire').findOne();
-const repertoire: Song[] = content.body as unknown as Song[];
+const { data } = await useAsyncData('repertoire', () => {
+  return queryCollection('repertoire').first();
+});
+const repertoire: Song[] = data.value?.meta.body as unknown as Song[];
 </script>
 
 <template>
@@ -17,7 +19,7 @@ const repertoire: Song[] = content.body as unknown as Song[];
   <p class="mb-4">zum Beispiel diese hier...</p>
 
   <div class="repertoire mb-5">
-    <p v-for="song of repertoire">
+    <p v-for="song in repertoire" :key="song.title">
       {{ song.title }} <em v-if="song.artist">– {{ song.artist }}</em>
     </p>
   </div>

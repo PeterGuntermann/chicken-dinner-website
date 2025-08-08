@@ -6,8 +6,10 @@ type Event = {
   details?: string;
 };
 
-const content = await queryContent('/events').findOne();
-const events = content.body as unknown as Event[];
+const { data } = await useAsyncData('events', () => {
+  return queryCollection('events').first();
+});
+const events = data.value?.meta.body as unknown as Event[];
 const heute = new Date().getTime();
 const datum = (event: Event) => Date.parse(event.datum);
 const zuletzt = events.filter((event) => datum(event) < heute).slice(0, 4);
@@ -22,7 +24,7 @@ const demnaechst = events.filter((event) => datum(event) > heute);
 
     <div class="row mb-5">
       <div
-        class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4"
+        class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 mb-4"
         v-for="event in demnaechst"
       >
         <div class="card">
