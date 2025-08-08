@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   nitro: {
     logLevel: 'trace',
     prerender: {
+      routes: ['/', '/datenschutz', '/impressum', '/galerie-2024-full'],
       crawlLinks: false,
       failOnError: false,
     },
