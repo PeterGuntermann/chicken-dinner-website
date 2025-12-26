@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Events from '~/components/events.vue';
 import GalerieHuehnchen from '~/components/galerie-huehnchen.vue';
-import GalerieWir from '~/components/galerie-wir.vue';
 import InstagramLink from '~/components/instagram-link.vue';
 import SchreibUns from '~/components/schreib-uns.vue';
 import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
@@ -26,15 +25,15 @@ import { HomeSections } from '~/constants';
     <h1>Die Band für deinen Hühnerstall!</h1>
 
     <InstagramLink class="mb-5" />
+  </section>
+
+  <section :id="HomeSections.dasSindWir">
     <WillkommenGruppenbild />
+    <!--<GalerieWir />-->
   </section>
 
   <section :id="HomeSections.unsereMusik">
     <DerMixMachts />
-  </section>
-
-  <section :id="HomeSections.dasSindWir">
-    <GalerieWir />
   </section>
 
   <section :id="HomeSections.inAktion">
