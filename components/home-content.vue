@@ -3,7 +3,6 @@ import Events from '~/components/events.vue';
 import GalerieHuehnchen from '~/components/galerie-huehnchen.vue';
 import InstagramLink from '~/components/instagram-link.vue';
 import SchreibUns from '~/components/schreib-uns.vue';
-import WillkommenGruppenbild from '~/components/willkommen-gruppenbild.vue';
 import { HomeSections } from '~/constants';
 </script>
 
@@ -28,8 +27,8 @@ import { HomeSections } from '~/constants';
   </section>
 
   <section :id="HomeSections.dasSindWir">
-    <WillkommenGruppenbild />
-    <!--<GalerieWir />-->
+    <!--<WillkommenGruppenbild />-->
+    <GalerieWir />
   </section>
 
   <section :id="HomeSections.unsereMusik">
@@ -40,9 +39,9 @@ import { HomeSections } from '~/constants';
     <h2>So sieht's in Aktion aus</h2>
     <Galerie2024Teaser />
 
-    <div class="d-flex justify-content-center mb-5">
-      <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" trigger="immediate" />
-    </div>
+    <!--    <div class="d-flex justify-content-center mb-5">-->
+    <!--      <LazyScriptYouTubePlayer video-id="ELhGopMPJC4" trigger="immediate" />-->
+    <!--    </div>-->
 
     <InstagramLink />
   </section>
